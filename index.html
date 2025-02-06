@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="currency-converter">
+        <h2>Currency Converter</h2>
+        <div class="amount">
+            <input type="number" id="amount" placeholder="Enter Amount">
+        </div>
+        <div class="exchange">
+            <div class="from">
+                <label for="fromCurrency">From</label>
+                <select id="fromCurrency" class="from-options" name="from">
+                    
+                </select>
+            </div>
+            <button id="swap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></button>
+            <div class="to">
+                <label for="toCurrency">To</label>
+                <select id="toCurrency" class="to-options" name="to">
+                    
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <p id="result">result will aprear here</p>
+        </div>
+        <div class="exchange-button">
+            <button id="convertBtn">Get Exchange Rate</button>
+        </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
