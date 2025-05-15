@@ -25,8 +25,7 @@ btn.addEventListener("click", async (evt) => {
     let amount = document.querySelector("#amount");
     let amtVal = amount.value;
     if(amtVal === "" || amtVal < 1){
-        amtVal = 1;
-        amount.value = "1";
+        amtVal = 0;
     }
     
     try {
@@ -52,6 +51,6 @@ btn.addEventListener("click", async (evt) => {
         result.innerHTML = `<p>${convertedAmount.toFixed(2)}</p>`;
     } catch (error) {
         console.error('Error fetching data:', error);
-        result.innerHTML = '<p>Error occurred while fetching conversion rates.</p>';
+        result.innerHTML = '<p>Error occurred while fetching conversion rates</p>';
     }
 });
