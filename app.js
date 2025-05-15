@@ -5,6 +5,7 @@ const btn = document.querySelector("#convertBtn");
 const from = document.querySelector("#fromCurrency");
 const to = document.querySelector("#toCurrency");
 const result = document.querySelector("#result");
+const swapBtn = document.querySelector("#swap");
 
 
 for(let s of dropdown){
@@ -19,6 +20,14 @@ for(let s of dropdown){
         s.append(newOption);
     }
 }
+
+swapBtn.addEventListener("click", () => {
+  // Swap the values of the from and to currency dropdowns
+  const fromValue = from.value;
+  const toValue = to.value;
+  from.value = toValue;
+  to.value = fromValue;
+});
 
 
 btn.addEventListener("click", async (evt) => {
